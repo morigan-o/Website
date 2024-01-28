@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Login</title>
+ <link rel="stylesheet" href="Login.css"/>
+</head>
+<body>
+  <div class="form">
+  <form>
+   <h2>Login</h2>
+   <label>
+    <input type="text" placeholder="username" id="username">
+   </label>
+   <label>
+    <input type="password" placeholder="Password" id="password">
+   </label>
+   <p style="color: red; margin-left:45px; margin-top:20px; font-size:12px;" id="alt"></p>
+  </form>
+  <button id="Login-btn" onclick="Login()">Login</button>
+ </div>
+ <script>
+ function Login(){
+  const savedUsername = localStorage.getItem('username');
+  const savedPassword = localStorage.getItem('password');
+  const username = document.getElementById('username').value;
+  const password = document.getElementById('password').value;
+ 
+  if(username === savedUsername && password === savedPassword){
+    window.location.href = 'WEB1.html';
+   
+  }
+  else{
+   document.getElementById('alt').innerText = `Coundn't find your info.Please recheck!`;
+  }
+ }
+ </script>
+</body>
+</html>

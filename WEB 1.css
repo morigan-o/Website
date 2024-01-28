@@ -1,0 +1,179 @@
+    *{
+     margin: 0;
+     padding: 0;
+     font-family: 'Arial', sans-serif,Times New Roman;
+    }
+
+    body {
+     background: rgba(0,0,0,0.90);
+    }
+    .navbar {
+     display: flex;
+     background: #111;
+     height: 40px;
+     color: #fff;
+     z-index: 900;
+    }
+    #comp-name{
+     color: #444;
+     position: relative;
+     left: 60px;
+     pointer-events: none;
+     text-decoration: underline;
+     text-decoration-color: #ccc;
+    }
+
+    .n-nav a {
+     text-decoration: none;
+     color: #fff;
+     padding: 10px;
+     margin-bottom: 5px;
+     transition: color 0.3s ease;
+     background-color: #222;
+     display: block;
+    }
+
+    .n-nav a:hover {
+     border-bottom: 2px solid #fff;
+     text-shadow: 3px 3px 2px #000;
+    }
+    
+    .n-nav a:active{
+     border-bottom: 2px solid #fff;
+    }
+
+    .n-btn {
+      position: absolute;
+      left: 0;
+      top: 1;
+      transform: translateY(-50%);
+      padding: 3px;
+    }
+    #menu {
+      width: 30px;
+      height: 30px;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      background: transparent;
+      position: absolute;
+      top: 6px;
+      left: 5px;
+    }
+    .n-nav {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 0;
+      height: 100%;
+      transition: width 0.3s;
+      background-color: #111;
+      z-index: 1000;
+      overflow:scroll;
+      overflow-y:scroll;
+      overflow-x:hidden;
+    }
+    #close{
+     position: absolute;
+     top: 2px;
+     left: 220px;
+     background-color: transparent;
+     border: 1px solid #fff;
+     color: #fff;
+     height: 30px;
+     width: 30px;
+     cursor: pointer;
+    }
+    #account{
+     width: 30px;
+     height: 30px;
+     border: 2px solid #666;
+     border-bottom-color: #333;
+     border-top-color: #333;
+     border-radius: 70%;
+     cursor: pointer;
+     background-image: url('user1.png');
+     background-size: cover;
+     position: absolute;
+     top: 6px;
+     right: 6px;
+    }
+    #a-close{
+     position: absolute;
+     top: 2px;
+     right: 220px;
+     background-color: transparent;
+     border: 1px solid #fff;
+     color: #fff;
+     height: 30px;
+     width: 30px;
+     cursor: pointer;
+    }
+    .a-nav {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 0;
+      height: 100%;
+      overflow: hidden;
+      transition: width 0.3s;
+      background-color: #111;
+      z-index: 1000;
+    }
+    .a-nav a {
+     text-decoration: none;
+     color: #fff;
+     padding: 10px;
+     margin-bottom: 5px;
+     transition: color 0.3s ease;
+     background-color: #222;
+     display: block;
+    }
+
+    .a-nav a:hover {
+     border-top: 2px solid #fff;
+     text-shadow: 3px 3px 2px #000;
+    }
+    
+    .a-nav a:active{
+     border-top: 2px solid #fff;
+    }
+    #user{
+     height: 60px;
+     width: 60px;
+     border-radius: 75%;
+     background-image: url('user.jpeg');
+     background-size: cover;
+     margin-left: 8px;
+    }
+    #username{
+     position: relative;
+     left: 20px;
+     color: #ddd;
+    }
+    .drop-down{
+     padding: 10px;
+     margin-top: 5px;
+     transition: color 0.3s ease;
+     background-color: #333;
+    }
+.info{
+ padding: 10px;
+ margin-top: 5px;
+ transition: color 0.3s ease;
+ background-color: #333;
+}
+.drop-down:hover{
+ border-bottom: 2px solid #fff;
+ text-shadow: 3px 3px 2px #000;
+}
+.info:hover{
+ border-bottom: 2px solid #fff;
+ text-shadow: 3px 3px 2px #000;
+}
+summary{
+ cursor: pointer;
+}
+.info h4{
+ margin-left: 10px;
+}

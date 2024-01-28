@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Login</title>
+ <link rel="stylesheet" href="Sign-up.css"/>
+</head>
+<body>
+ <div class="form">
+  <form>
+   <h2>Sign-up</h2>
+   <lable>
+    <input type="text" placeholder="Full name" id="name">
+   </lable>
+   <lable>
+    <input type="email" placeholder="E-mail" id="email">
+   </lable>
+   <label>
+    <input type="text" placeholder="username" id="username">
+   </label>
+   <label>
+    <input type="password" placeholder="Password" id="password">
+    <input type="password" placeholder="Confirm Password">
+   </label>
+   <p id="alt" style="color:red; margin:10px; margin-left:40px; font-size:13px;"></p>
+  </form>
+  <button id="Sign-up-btn" onclick="Signup()">Sign-up</button>
+ </div>
+<script>
+ function Signup() {
+ const username = document.getElementById('username').value;
+ const email = document.getElementById('email').value;
+ const password = document.getElementById('password').value;
+ const name = document.getElementById('name').value;
+
+ localStorage.setItem('name', name);
+ localStorage.setItem('username', username);
+ localStorage.setItem('email', email);
+ localStorage.setItem('password', password);
+
+//  (password === true && username === true && name === true && email === true){
+// window.location.href = 'Login.html';
+//}
+//{
+ //document.getElementById('alt').innerText = `Please fill out all sections!`;
+//}
+ window.location.href = 'Login.html';
+
+ }
+</script>
+</body>
+</html>
